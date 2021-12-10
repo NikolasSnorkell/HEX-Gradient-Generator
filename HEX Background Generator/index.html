@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div id="container" >
+
+        <p class="message text">Click on the line of code below to generate random HEX gradient background.</p>
+        <p class="message2 text">Save config to hold over current color theme.</p>
+    <div id="codeStringCont">
+        <p id="curConf" class="text" onclick="setColor()">background: <span id="colorCode">linear-gradient(to right,#fffff,#ffffff)</span></p>
+        <img src="css/save.png" alt="save" id="save">
+    </div>
+      
+        <select name="saved" id="configs" onchange="getConfig(this)">
+           
+        </select>
+       
+        
+        <button id="copy" onclick="copyConfig(this)">Copy Config</button>
+
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

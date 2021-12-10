@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Arbor;
+    src: url(../font/Arbor.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Arbor;
+}
+
+
+.text{
+    
+    font-size: 1.5rem;
+    position: relative;
+
+    animation: colorChange 5s ease-in infinite;
+}
+
+@keyframes colorChange {
+    0%{
+        color: white;
+    }
+    20%{
+        color: grey;
+    }
+    40%{
+        color: black;
+    }
+    60%{
+        color: black;
+    }
+    80%{
+        color: grey;
+    }
+    100%{
+        color: white;
+    }
+}
+
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+    text-align: center;
+}
+
+#configs{
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+    background: rgba(0,0,0,0);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+#codeStringCont{
+    width: 100%;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+
+    text-align: center;
+}
+
+#save{
+    width: 20px;
+    /* position: absolute; */
+    
+
+    
+}
+#curConf:hover,#copy:hover,#save:hover{
+    cursor: pointer;
+}
+
+#copy{
+    font-size: 1.1rem;
+    padding: 5px;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:930px) {
+    
+    #configs{
+        width: 470px;
+    }
+
+
+}
+
+@media  screen and (max-width:634px) {
+    
+    .text{
+       font-size: 1.2rem;
+    }
+    #configs{
+        font-size: 1rem;
+        width: 430px;
+    }
+
+}
+
+@media  screen and (max-width:513px) {
+    #container{
+        padding: 0 15px;
+    }
+   #curConf{
+       width: 250px;
+   }
+
+   #configs{
+    font-size: 1rem;
+    width: 300px;
+}
+
+}
